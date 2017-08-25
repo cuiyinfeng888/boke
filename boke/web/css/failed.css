@@ -1,0 +1,55 @@
+*{
+    margin: 0;padding:0;
+}
+body{
+    background:#F8F6F6;
+}
+#msgbox{
+    width:900px;
+    height:400px;
+    margin: 200px auto;
+    background: url(../images/blackwinds.png) no-repeat 0px 0px;
+}
+#mainmsg{
+    width:600px;
+    height:80px;
+    line-height: 80px;
+    margin: 0 auto;
+    font-size: 80px;
+    text-align: center;
+    color:#7C7D81;
+    letter-spacing:5px;
+}
+#sec_msg{
+    width:300px;
+    height:50px;
+    margin: 0 auto;
+    padding:10px;
+    font-size: 30px;
+    color:#7C7D81;
+    text-align: center;
+}
+.btn{
+    display: block;
+    width:120px;
+    height: 40px;
+    margin: 10px auto;
+    background:#7C7D81;
+    border-radius: 5px;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+}
+a,a:hover,a:visited{
+    text-decoration: none;
+    color:white;
+}
+.time{
+    color:#7C7D81;
+    width: 70px;
+    height:70px;
+    margin:40px auto;
+    text-align: center;
+    line-height:70px;
+    font-size: 50px;
+}

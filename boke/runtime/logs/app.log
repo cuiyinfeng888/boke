@@ -1,0 +1,1037 @@
+2017-04-02 13:19:49 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1130] Host '122.70.105.112' is not allowed to connect to this MySQL server' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Connection.php:603
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Connection.php(603): PDO->__construct('mysql:host=106....', 'root', 'fyzieqyCPYtP0Ar...', NULL)
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Connection.php(545): yii\db\Connection->createPdoInstance()
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#4 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 E:\wamp\www\boke\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 E:\wamp\www\boke\vendor\yiisoft\yii2\console\controllers\MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 E:\wamp\www\boke\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 E:\wamp\www\boke\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 E:\wamp\www\boke\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#18 E:\wamp\www\boke\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 E:\wamp\www\boke\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 E:\wamp\www\boke\yii(20): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1130] Host '122.70.105.112' is not allowed to connect to this MySQL server' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Connection.php:550
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#4 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\console\controllers\MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 E:\wamp\www\boke\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 E:\wamp\www\boke\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#16 E:\wamp\www\boke\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 E:\wamp\www\boke\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 E:\wamp\www\boke\yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2017-04-02 13:19:44 [-][-][-][info][application] $_SERVER = [
+    '#envTSLOGSHELLEXT5296' => '287574016'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\cyf\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'AFABW-704300554'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\cyf'
+    'LOCALAPPDATA' => 'C:\\Users\\cyf\\AppData\\Local'
+    'LOGONSERVER' => '\\\\AFABW-704300554'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\cyf\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\Users\\cyf\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\cyf\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\cyf\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'AFABW-704300554'
+    'USERDOMAIN_ROAMINGPROFILE' => 'AFABW-704300554'
+    'USERNAME' => 'cyf'
+    'USERPROFILE' => 'C:\\Users\\cyf'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'E:\\wamp\\www\\boke\\'
+    'PHP_SELF' => 'E:\\wamp\\www\\boke\\yii'
+    'SCRIPT_NAME' => 'E:\\wamp\\www\\boke\\yii'
+    'SCRIPT_FILENAME' => 'E:\\wamp\\www\\boke\\yii'
+    'PATH_TRANSLATED' => 'E:\\wamp\\www\\boke\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1491139184.2401
+    'REQUEST_TIME' => 1491139184
+    'argv' => [
+        0 => 'E:\\wamp\\www\\boke\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-04-02 13:20:35 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 E:\wamp\www\boke\migrations\m170210_024739_quest.php(12): yii\db\Command->execute()
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m170210_024739_quest->up()
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m170210_024739_...')
+#4 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 E:\wamp\www\boke\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#10 E:\wamp\www\boke\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#11 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 E:\wamp\www\boke\yii(20): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes
+The SQL being executed was:              create  index t on quest(title);' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), '             cr...')
+#1 E:\wamp\www\boke\migrations\m170210_024739_quest.php(12): yii\db\Command->execute()
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m170210_024739_quest->up()
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m170210_024739_...')
+#4 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 E:\wamp\www\boke\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#10 E:\wamp\www\boke\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#11 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 E:\wamp\www\boke\yii(20): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1071
+    [2] => Specified key was too long; max key length is 767 bytes
+)
+
+2017-04-02 13:20:29 [-][-][-][info][application] $_SERVER = [
+    '#envTSLOGSHELLEXT5296' => '287574016'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\cyf\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'AFABW-704300554'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\cyf'
+    'LOCALAPPDATA' => 'C:\\Users\\cyf\\AppData\\Local'
+    'LOGONSERVER' => '\\\\AFABW-704300554'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\cyf\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\Users\\cyf\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\cyf\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\cyf\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'AFABW-704300554'
+    'USERDOMAIN_ROAMINGPROFILE' => 'AFABW-704300554'
+    'USERNAME' => 'cyf'
+    'USERPROFILE' => 'C:\\Users\\cyf'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'E:\\wamp\\www\\boke\\'
+    'PHP_SELF' => 'E:\\wamp\\www\\boke\\yii'
+    'SCRIPT_NAME' => 'E:\\wamp\\www\\boke\\yii'
+    'SCRIPT_FILENAME' => 'E:\\wamp\\www\\boke\\yii'
+    'PATH_TRANSLATED' => 'E:\\wamp\\www\\boke\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1491139229.6855
+    'REQUEST_TIME' => 1491139229
+    'argv' => [
+        0 => 'E:\\wamp\\www\\boke\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-04-03 06:00:46 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in E:\wamp\www\boke\models\Tool.php:60
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(75): ::spl_autoload_call()
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\WxController->actionTest()
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#4 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction()
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#7 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-04-03 06:00:45 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973' => '1486904270'
+]
+
+$_SERVER = [
+    'REDIRECT_SCRIPT_URL' => '/wx/test'
+    'REDIRECT_SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_URL' => '/wx/test'
+    'SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'HTTP_HOST' => 'www.boke.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973=1486904270'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win64) PHP/5.6.19 Server at www.boke.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win64) PHP/5.6.19'
+    'SERVER_NAME' => 'www.boke.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/wamp/www/boke/web/index.php'
+    'REMOTE_PORT' => '58707'
+    'REDIRECT_URL' => '/wx/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/wx/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/wx/test'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\wx\\test\\test'
+    'PHP_SELF' => '/index.php/wx/test'
+    'REQUEST_TIME_FLOAT' => 1491199245.91
+    'REQUEST_TIME' => 1491199245
+]
+2017-04-03 06:15:49 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'unionid' doesn't have a default value' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 E:\wamp\www\boke\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 E:\wamp\www\boke\models\Tool.php(71): yii\db\BaseActiveRecord->save()
+#6 E:\wamp\www\boke\controllers\WxController.php(75): app\models\Tool::SaveWxUserInfo('<span class="st...')
+#7 [internal function]: app\controllers\WxController->actionTest()
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#10 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#11 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#12 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'unionid' doesn't have a default value
+The SQL being executed was: INSERT INTO `wx_user` (`subscribe`, `openid`, `sex`, `language`, `city`, `province`, `country`, `headimgurl`, `subscribe_time`, `remark`, `groupid`, `nickname`, `tagid_list`) VALUES ('1', 'oOQqpw28iDBbtbS_vtBmmv2Vuk1E', '1', 'zh_CN', '', '堪培拉', '澳大利亚', 'http://wx.qlogo.cn/mmopen/TAaUjRWnzbht64fbLJT8XQiaN6HCaJNzlFgxp19j0Uq3a5h4dhJSib3lmImt8qRV3GeZcLmgtbV6Ao3hGQibbxb3cRhxqqoGpVT/0', '1491133543', '', '0', 'CURD小码农', '[]')' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `wx...')
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 E:\wamp\www\boke\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 E:\wamp\www\boke\models\Tool.php(71): yii\db\BaseActiveRecord->save()
+#6 E:\wamp\www\boke\controllers\WxController.php(75): app\models\Tool::SaveWxUserInfo('<span class="st...')
+#7 [internal function]: app\controllers\WxController->actionTest()
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#10 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#11 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#12 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'unionid' doesn't have a default value
+)
+
+2017-04-03 06:15:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973' => '1486904270'
+]
+
+$_SERVER = [
+    'REDIRECT_SCRIPT_URL' => '/wx/test'
+    'REDIRECT_SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_URL' => '/wx/test'
+    'SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'HTTP_HOST' => 'www.boke.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973=1486904270'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win64) PHP/5.6.19 Server at www.boke.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win64) PHP/5.6.19'
+    'SERVER_NAME' => 'www.boke.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/wamp/www/boke/web/index.php'
+    'REMOTE_PORT' => '58915'
+    'REDIRECT_URL' => '/wx/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/wx/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/wx/test'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\wx\\test\\test'
+    'PHP_SELF' => '/index.php/wx/test'
+    'REQUEST_TIME_FLOAT' => 1491200148.46
+    'REQUEST_TIME' => 1491200148
+]
+2017-04-03 06:17:51 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'unionid' doesn't have a default value' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 E:\wamp\www\boke\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 E:\wamp\www\boke\models\Tool.php(71): yii\db\BaseActiveRecord->save()
+#6 E:\wamp\www\boke\controllers\WxController.php(75): app\models\Tool::SaveWxUserInfo('<span class="st...')
+#7 [internal function]: app\controllers\WxController->actionTest()
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#10 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#11 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#12 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'unionid' doesn't have a default value
+The SQL being executed was: INSERT INTO `wx_user` (`subscribe`, `openid`, `sex`, `language`, `city`, `province`, `country`, `headimgurl`, `subscribe_time`, `remark`, `groupid`, `nickname`, `tagid_list`) VALUES ('1', 'oOQqpw28iDBbtbS_vtBmmv2Vuk1E', '1', 'zh_CN', '', '堪培拉', '澳大利亚', 'http://wx.qlogo.cn/mmopen/TAaUjRWnzbht64fbLJT8XQiaN6HCaJNzlFgxp19j0Uq3a5h4dhJSib3lmImt8qRV3GeZcLmgtbV6Ao3hGQibbxb3cRhxqqoGpVT/0', '1491133543', '', '0', 'CURD小码农', '[]')' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `wx...')
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 E:\wamp\www\boke\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 E:\wamp\www\boke\models\Tool.php(71): yii\db\BaseActiveRecord->save()
+#6 E:\wamp\www\boke\controllers\WxController.php(75): app\models\Tool::SaveWxUserInfo('<span class="st...')
+#7 [internal function]: app\controllers\WxController->actionTest()
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#10 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#11 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#12 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'unionid' doesn't have a default value
+)
+
+2017-04-03 06:17:51 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973' => '1486904270'
+]
+
+$_SERVER = [
+    'REDIRECT_SCRIPT_URL' => '/wx/test'
+    'REDIRECT_SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_URL' => '/wx/test'
+    'SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'HTTP_HOST' => 'www.boke.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973=1486904270'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win64) PHP/5.6.19 Server at www.boke.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win64) PHP/5.6.19'
+    'SERVER_NAME' => 'www.boke.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/wamp/www/boke/web/index.php'
+    'REMOTE_PORT' => '58940'
+    'REDIRECT_URL' => '/wx/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/wx/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/wx/test'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\wx\\test\\test'
+    'PHP_SELF' => '/index.php/wx/test'
+    'REQUEST_TIME_FLOAT' => 1491200271.442
+    'REQUEST_TIME' => 1491200271
+]
+2017-04-04 10:45:59 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Cannot use object of type stdClass as array' in E:\wamp\www\boke\models\Tool.php:103
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\WxController->actionTest()
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction()
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2017-04-04 10:45:58 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973' => '1486904270'
+]
+
+$_SERVER = [
+    'REDIRECT_SCRIPT_URL' => '/wx/test'
+    'REDIRECT_SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_URL' => '/wx/test'
+    'SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'HTTP_HOST' => 'www.boke.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973=1486904270'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win64) PHP/5.6.19 Server at www.boke.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win64) PHP/5.6.19'
+    'SERVER_NAME' => 'www.boke.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/wamp/www/boke/web/index.php'
+    'REMOTE_PORT' => '55595'
+    'REDIRECT_URL' => '/wx/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/wx/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/wx/test'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\wx\\test\\test'
+    'PHP_SELF' => '/index.php/wx/test'
+    'REQUEST_TIME_FLOAT' => 1491302758.085
+    'REQUEST_TIME' => 1491302758
+]
+2017-04-04 10:46:54 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined property: stdClass::$openid' in E:\wamp\www\boke\models\Tool.php:103
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\WxController->actionTest()
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction()
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2017-04-04 10:46:53 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973' => '1486904270'
+]
+
+$_SERVER = [
+    'REDIRECT_SCRIPT_URL' => '/wx/test'
+    'REDIRECT_SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_URL' => '/wx/test'
+    'SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'HTTP_HOST' => 'www.boke.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973=1486904270'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win64) PHP/5.6.19 Server at www.boke.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win64) PHP/5.6.19'
+    'SERVER_NAME' => 'www.boke.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/wamp/www/boke/web/index.php'
+    'REMOTE_PORT' => '55613'
+    'REDIRECT_URL' => '/wx/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/wx/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/wx/test'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\wx\\test\\test'
+    'PHP_SELF' => '/index.php/wx/test'
+    'REQUEST_TIME_FLOAT' => 1491302813.022
+    'REQUEST_TIME' => 1491302813
+]
+2017-04-04 10:47:56 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_merge(): Argument #2 is not an array' in E:\wamp\www\boke\models\Tool.php:103
+Stack trace:
+#0 E:\wamp\www\boke\controllers\WxController.php(94): app\models\Tool::getAllUser()
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\WxController->actionTest()
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#4 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction()
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#7 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-04-04 10:47:55 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973' => '1486904270'
+]
+
+$_SERVER = [
+    'REDIRECT_SCRIPT_URL' => '/wx/test'
+    'REDIRECT_SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_URL' => '/wx/test'
+    'SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'HTTP_HOST' => 'www.boke.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973=1486904270'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win64) PHP/5.6.19 Server at www.boke.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win64) PHP/5.6.19'
+    'SERVER_NAME' => 'www.boke.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/wamp/www/boke/web/index.php'
+    'REMOTE_PORT' => '55644'
+    'REDIRECT_URL' => '/wx/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/wx/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/wx/test'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\wx\\test\\test'
+    'PHP_SELF' => '/index.php/wx/test'
+    'REQUEST_TIME_FLOAT' => 1491302875.877
+    'REQUEST_TIME' => 1491302875
+]
+2017-04-19 16:45:16 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\db\Command::select()' in E:\wamp\www\boke\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 E:\wamp\www\boke\controllers\WxController.php(141): yii\base\Component->__call('select', Array)
+#1 E:\wamp\www\boke\controllers\WxController.php(141): yii\db\Command->select('b.type,b.backme...')
+#2 [internal function]: app\controllers\WxController->actionTest()
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('test', Array)
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('wx/test', Array)
+#7 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-04-19 16:45:16 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973' => '1486904270'
+    '_csrf' => '5061473287ab0a734d36373a8ac1ec18f2e5c0a50d8245e24e6355a9d4c313b0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RDHDJUloeNBmSErDREqlVKWqgA8mUKQ-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_SCRIPT_URL' => '/wx/test'
+    'REDIRECT_SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_URL' => '/wx/test'
+    'SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'HTTP_HOST' => 'www.boke.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973=1486904270; _csrf=5061473287ab0a734d36373a8ac1ec18f2e5c0a50d8245e24e6355a9d4c313b0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RDHDJUloeNBmSErDREqlVKWqgA8mUKQ-%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win64) PHP/5.6.19 Server at www.boke.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win64) PHP/5.6.19'
+    'SERVER_NAME' => 'www.boke.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/wamp/www/boke/web/index.php'
+    'REMOTE_PORT' => '60447'
+    'REDIRECT_URL' => '/wx/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/wx/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/wx/test'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\wx\\test\\test'
+    'PHP_SELF' => '/index.php/wx/test'
+    'REQUEST_TIME_FLOAT' => 1492620315.988
+    'REQUEST_TIME' => 1492620315
+]
+2017-04-19 16:50:28 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\db\Command::from()' in E:\wamp\www\boke\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 E:\wamp\www\boke\controllers\WxController.php(141): yii\base\Component->__call('from', Array)
+#1 E:\wamp\www\boke\controllers\WxController.php(141): yii\db\Command->from('user_words w')
+#2 [internal function]: app\controllers\WxController->actionTest()
+#3 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('test', Array)
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('wx/test', Array)
+#7 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-04-19 16:50:28 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973' => '1486904270'
+    '_csrf' => '5061473287ab0a734d36373a8ac1ec18f2e5c0a50d8245e24e6355a9d4c313b0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RDHDJUloeNBmSErDREqlVKWqgA8mUKQ-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_SCRIPT_URL' => '/wx/test'
+    'REDIRECT_SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_URL' => '/wx/test'
+    'SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'HTTP_HOST' => 'www.boke.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973=1486904270; _csrf=5061473287ab0a734d36373a8ac1ec18f2e5c0a50d8245e24e6355a9d4c313b0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RDHDJUloeNBmSErDREqlVKWqgA8mUKQ-%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win64) PHP/5.6.19 Server at www.boke.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win64) PHP/5.6.19'
+    'SERVER_NAME' => 'www.boke.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/wamp/www/boke/web/index.php'
+    'REMOTE_PORT' => '60647'
+    'REDIRECT_URL' => '/wx/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/wx/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/wx/test'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\wx\\test\\test'
+    'PHP_SELF' => '/index.php/wx/test'
+    'REQUEST_TIME_FLOAT' => 1492620628.714
+    'REQUEST_TIME' => 1492620628
+]
+2017-04-19 16:55:05 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.keywords' in 'where clause'' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#3 E:\wamp\www\boke\controllers\WxController.php(148): yii\db\Query->one()
+#4 [internal function]: app\controllers\WxController->actionTest()
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#7 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.keywords' in 'where clause'
+The SQL being executed was: SELECT `b`.`type`, `b`.`backmedia` FROM `user_words` `w` LEFT JOIN `user_back_words` `b` ON b.kid=u.id WHERE u.keywords like "%woaini%" ORDER BY rand() LIMIT 1' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT `b`.`typ...')
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#3 E:\wamp\www\boke\controllers\WxController.php(148): yii\db\Query->one()
+#4 [internal function]: app\controllers\WxController->actionTest()
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#7 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'u.keywords' in 'where clause'
+)
+
+2017-04-19 16:55:04 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973' => '1486904270'
+    '_csrf' => '5061473287ab0a734d36373a8ac1ec18f2e5c0a50d8245e24e6355a9d4c313b0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RDHDJUloeNBmSErDREqlVKWqgA8mUKQ-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_SCRIPT_URL' => '/wx/test'
+    'REDIRECT_SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_URL' => '/wx/test'
+    'SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'HTTP_HOST' => 'www.boke.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973=1486904270; _csrf=5061473287ab0a734d36373a8ac1ec18f2e5c0a50d8245e24e6355a9d4c313b0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RDHDJUloeNBmSErDREqlVKWqgA8mUKQ-%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win64) PHP/5.6.19 Server at www.boke.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win64) PHP/5.6.19'
+    'SERVER_NAME' => 'www.boke.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/wamp/www/boke/web/index.php'
+    'REMOTE_PORT' => '60925'
+    'REDIRECT_URL' => '/wx/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/wx/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/wx/test'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\wx\\test\\test'
+    'PHP_SELF' => '/index.php/wx/test'
+    'REQUEST_TIME_FLOAT' => 1492620904.855
+    'REQUEST_TIME' => 1492620904
+]
+2017-04-19 16:55:32 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.id' in 'on clause'' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#3 E:\wamp\www\boke\controllers\WxController.php(148): yii\db\Query->one()
+#4 [internal function]: app\controllers\WxController->actionTest()
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#7 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.id' in 'on clause'
+The SQL being executed was: SELECT `b`.`type`, `b`.`backmedia` FROM `user_words` `w` LEFT JOIN `user_back_words` `b` ON b.kid=u.id WHERE w.keywords like "%woaini%" ORDER BY rand() LIMIT 1' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT `b`.`typ...')
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#3 E:\wamp\www\boke\controllers\WxController.php(148): yii\db\Query->one()
+#4 [internal function]: app\controllers\WxController->actionTest()
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#7 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'u.id' in 'on clause'
+)
+
+2017-04-19 16:55:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973' => '1486904270'
+    '_csrf' => '5061473287ab0a734d36373a8ac1ec18f2e5c0a50d8245e24e6355a9d4c313b0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RDHDJUloeNBmSErDREqlVKWqgA8mUKQ-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_SCRIPT_URL' => '/wx/test'
+    'REDIRECT_SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_URL' => '/wx/test'
+    'SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'HTTP_HOST' => 'www.boke.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973=1486904270; _csrf=5061473287ab0a734d36373a8ac1ec18f2e5c0a50d8245e24e6355a9d4c313b0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RDHDJUloeNBmSErDREqlVKWqgA8mUKQ-%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win64) PHP/5.6.19 Server at www.boke.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win64) PHP/5.6.19'
+    'SERVER_NAME' => 'www.boke.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/wamp/www/boke/web/index.php'
+    'REMOTE_PORT' => '60941'
+    'REDIRECT_URL' => '/wx/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/wx/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/wx/test'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\wx\\test\\test'
+    'PHP_SELF' => '/index.php/wx/test'
+    'REQUEST_TIME_FLOAT' => 1492620932.491
+    'REQUEST_TIME' => 1492620932
+]
+2017-04-19 16:55:35 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.id' in 'on clause'' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#3 E:\wamp\www\boke\controllers\WxController.php(148): yii\db\Query->one()
+#4 [internal function]: app\controllers\WxController->actionTest()
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#7 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.id' in 'on clause'
+The SQL being executed was: SELECT `b`.`type`, `b`.`backmedia` FROM `user_words` `w` LEFT JOIN `user_back_words` `b` ON b.kid=u.id WHERE w.keywords like "%woaini%" ORDER BY rand() LIMIT 1' in E:\wamp\www\boke\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT `b`.`typ...')
+#1 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\wamp\www\boke\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#3 E:\wamp\www\boke\controllers\WxController.php(148): yii\db\Query->one()
+#4 [internal function]: app\controllers\WxController->actionTest()
+#5 E:\wamp\www\boke\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#6 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#7 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#8 E:\wamp\www\boke\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#9 E:\wamp\www\boke\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\wamp\www\boke\web\index.php(12): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'u.id' in 'on clause'
+)
+
+2017-04-19 16:55:35 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973' => '1486904270'
+    '_csrf' => '5061473287ab0a734d36373a8ac1ec18f2e5c0a50d8245e24e6355a9d4c313b0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RDHDJUloeNBmSErDREqlVKWqgA8mUKQ-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_SCRIPT_URL' => '/wx/test'
+    'REDIRECT_SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_URL' => '/wx/test'
+    'SCRIPT_URI' => 'http://www.boke.com/wx/test'
+    'HTTP_HOST' => 'www.boke.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_41fcd3973bb8fd428b3bcbe1fe8f1973=1486904270; _csrf=5061473287ab0a734d36373a8ac1ec18f2e5c0a50d8245e24e6355a9d4c313b0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RDHDJUloeNBmSErDREqlVKWqgA8mUKQ-%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;E:\\wamp\\bin\\mysql\\mysql5.7.11\\bin;E:\\wamp\\bin\\php\\php5.6.19;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win64) PHP/5.6.19 Server at www.boke.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win64) PHP/5.6.19'
+    'SERVER_NAME' => 'www.boke.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wamp/www/boke/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/wamp/www/boke/web/index.php'
+    'REMOTE_PORT' => '60942'
+    'REDIRECT_URL' => '/wx/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/wx/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/wx/test'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\wx\\test\\test'
+    'PHP_SELF' => '/index.php/wx/test'
+    'REQUEST_TIME_FLOAT' => 1492620935.297
+    'REQUEST_TIME' => 1492620935
+]
