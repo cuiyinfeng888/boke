@@ -168,7 +168,7 @@ class WxController extends Controller
 
 	public function actionGit(){
 		
-		echo 1;
+		echo 112313123;
 	
 	}
 
